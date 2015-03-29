@@ -1,0 +1,8 @@
+# DIR-868L-shibby
+
+Add this into the Makefile (near dir868l)
+
+    dir868l_vypr:
+	     @$(MAKE) bin ARM=y NVRAM_SIZE=32 NAND=y BCMSMP=y ASUS_TRX="DLINK" UFSD="ASUS" CTF=y GRO=y NTFS=y BBEXTRAS=y USBEXTRAS=y EBTABLES=y IPV6SUPP=y MEDIASRV=y B=E BUILD_DESC="VYPR" USB="USB" OPENVPN=y DNSSEC=y DNSCRYPT=y UPS=y
+
+
