@@ -2,6 +2,6 @@
 IF=`nvram get wan_ifname`
 GW=`ip -6 neigh | grep $IF | awk '{print $1}'`
 for i in $GW; do
-    route -A inet6 add ::/0 gw $i vlan2
+    route -A inet6 add ::/0 gw $i $IF
   done
 done
